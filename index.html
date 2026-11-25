@@ -1,0 +1,1707 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雷电将军_雷电将军视频社区_雷电将军官方影像门户</title>
+<meta name="description" content="雷电将军官方网站，聚合雷电将军原创高清视频、创作者内容生态与社区互动，提供精品影像、品牌故事与官方发布。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23241b3a'/%3E%3Cpath d='M34 8 L18 36 h12 l-4 20 L46 26 H34 Z' fill='%23e6c66b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --rdn-bg:#14111f;
+  --rdn-bg2:#1c1730;
+  --rdn-panel:#221b39;
+  --rdn-line:#382c5c;
+  --rdn-text:#ece7f7;
+  --rdn-dim:#a99fc4;
+  --rdn-gold:#e6c66b;
+  --rdn-violet:#9a7bff;
+  --rdn-cyan:#6fd6e0;
+  --rdn-radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--rdn-bg);
+  color:var(--rdn-text);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+.rdn-wrap{width:min(1180px,92vw);margin:0 auto;}
+.rdn-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+/* ============ 吸顶区 ============ */
+.rdn-sticky{position:sticky;top:0;z-index:80;}
+.rdn-notice{
+  background:linear-gradient(90deg,#3a2a5e,#523a86 55%,#3a2a5e);
+  border-bottom:1px solid var(--rdn-line);
+  font-size:13px;
+  color:#f3ecff;
+}
+.rdn-notice .rdn-wrap{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 0;overflow:hidden;
+}
+.rdn-notice-tag{
+  flex:none;background:var(--rdn-gold);color:#241b3a;
+  font-weight:700;font-size:11px;padding:1px 8px;border-radius:999px;letter-spacing:.5px;
+}
+.rdn-notice-track{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.rdn-notice-track b{color:var(--rdn-gold);font-weight:600;}
+
+.rdn-header{
+  background:rgba(20,17,31,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--rdn-line);
+}
+.rdn-head-inner{display:flex;align-items:center;gap:18px;padding:12px 0;}
+.rdn-brand{display:flex;align-items:center;gap:10px;flex:none;}
+.rdn-brand-mark{
+  width:38px;height:38px;border-radius:11px;flex:none;
+  background:linear-gradient(145deg,#2c2149,#4a3577);
+  display:grid;place-items:center;border:1px solid #55407f;
+}
+.rdn-brand-mark svg{width:22px;height:22px;}
+.rdn-brand-txt strong{display:block;font-size:16px;letter-spacing:1px;}
+.rdn-brand-txt span{display:block;font-size:10.5px;color:var(--rdn-dim);letter-spacing:2px;}
+
+.rdn-nav{display:flex;gap:4px;flex:1;min-width:0;flex-wrap:wrap;}
+.rdn-nav a{
+  font-size:14px;color:var(--rdn-dim);padding:6px 11px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.rdn-nav a:hover{color:var(--rdn-gold);background:#2a2144;}
+
+.rdn-search{display:flex;align-items:center;gap:8px;flex:none;}
+.rdn-search-box{
+  display:flex;align-items:center;background:#241c3c;border:1px solid var(--rdn-line);
+  border-radius:999px;padding:4px 4px 4px 14px;transition:.2s;
+}
+.rdn-search-box:focus-within{border-color:var(--rdn-violet);box-shadow:0 0 0 3px rgba(154,123,255,.15);}
+.rdn-search-box input{
+  background:none;border:none;outline:none;color:var(--rdn-text);
+  font-size:13px;width:150px;padding:4px 0;
+}
+.rdn-search-box input::placeholder{color:#7a6f97;}
+.rdn-search-box button{
+  background:var(--rdn-violet);color:#fff;font-size:12.5px;
+  padding:5px 13px;border-radius:999px;transition:.2s;
+}
+.rdn-search-box button:hover{background:#8363f0;}
+.rdn-search-hint{
+  position:absolute;margin-top:6px;right:0;
+  background:#2b2247;border:1px solid var(--rdn-line);border-radius:10px;
+  font-size:12.5px;color:var(--rdn-gold);padding:6px 12px;
+  opacity:0;pointer-events:none;transition:.25s;white-space:nowrap;
+}
+.rdn-search-hint.rdn-on{opacity:1;}
+.rdn-search-rel{position:relative;}
+
+.rdn-burger{
+  display:none;width:40px;height:36px;border:1px solid var(--rdn-line);
+  border-radius:9px;place-items:center;background:#241c3c;
+}
+.rdn-burger span{display:block;width:17px;height:2px;background:var(--rdn-text);margin:2.5px 0;transition:.2s;}
+.rdn-burger.rdn-on span:nth-child(1){transform:translateY(5px) rotate(45deg);}
+.rdn-burger.rdn-on span:nth-child(2){opacity:0;}
+.rdn-burger.rdn-on span:nth-child(3){transform:translateY(-5px) rotate(-45deg);}
+
+/* ============ 首屏 ============ */
+.rdn-hero{padding:56px 0 68px;position:relative;overflow:hidden;}
+.rdn-hero::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(60% 70% at 82% 18%,rgba(154,123,255,.20),transparent 62%),
+             radial-gradient(50% 60% at 6% 85%,rgba(111,214,224,.10),transparent 60%);
+  pointer-events:none;
+}
+.rdn-hero-grid{
+  position:relative;display:grid;grid-template-columns:5fr 5fr;
+  gap:44px;align-items:center;
+}
+.rdn-hero-copy .rdn-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:2px;color:var(--rdn-gold);
+  border:1px solid #55407f;border-radius:999px;padding:4px 14px;margin-bottom:20px;
+}
+.rdn-kicker i{width:6px;height:6px;border-radius:50%;background:var(--rdn-gold);display:block;}
+.rdn-hero h1{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;letter-spacing:1px;
+  background:linear-gradient(100deg,#fff,#e6c66b 60%,#9a7bff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:8px;
+}
+.rdn-hero-sub{
+  font-size:14px;color:var(--rdn-cyan);letter-spacing:3px;margin-bottom:18px;
+}
+.rdn-hero-lead{font-size:15px;color:#c9c0e0;margin-bottom:14px;}
+.rdn-hero-intro{
+  font-size:14px;color:var(--rdn-dim);line-height:1.95;
+  border-left:2px solid var(--rdn-violet);padding-left:14px;margin-bottom:24px;
+}
+.rdn-hero-intro b{color:var(--rdn-text);font-weight:600;}
+.rdn-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px;}
+.rdn-btn{
+  display:inline-flex;align-items:center;gap:7px;font-size:14px;
+  padding:11px 24px;border-radius:999px;transition:.22s;font-weight:600;
+}
+.rdn-btn-gold{background:linear-gradient(100deg,#e6c66b,#c9a94c);color:#241b3a;box-shadow:0 6px 20px rgba(230,198,107,.22);}
+.rdn-btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(230,198,107,.34);}
+.rdn-btn-ghost{border:1px solid var(--rdn-line);color:var(--rdn-text);background:#221b39;}
+.rdn-btn-ghost:hover{border-color:var(--rdn-violet);color:var(--rdn-gold);}
+.rdn-btn-violet{background:var(--rdn-violet);color:#fff;}
+.rdn-btn-violet:hover{background:#8363f0;}
+
+.rdn-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+.rdn-stat{
+  background:linear-gradient(160deg,#241e3d,#1c1730);
+  border:1px solid var(--rdn-line);border-radius:12px;padding:13px 14px;
+}
+.rdn-stat strong{display:block;font-size:21px;color:var(--rdn-gold);letter-spacing:.5px;}
+.rdn-stat span{font-size:12px;color:var(--rdn-dim);}
+
+.rdn-hero-visual{position:relative;}
+.rdn-hero-figure{
+  border-radius:20px;overflow:hidden;border:1px solid #4a3577;
+  box-shadow:0 30px 70px rgba(0,0,0,.5);
+  position:relative;aspect-ratio:4/5;background:#1b1530;
+}
+.rdn-hero-figure svg{width:100%;height:100%;}
+.rdn-hero-badge{
+  position:absolute;left:16px;top:16px;font-size:11.5px;letter-spacing:1px;
+  background:rgba(20,17,31,.78);border:1px solid #55407f;color:var(--rdn-gold);
+  padding:4px 12px;border-radius:999px;backdrop-filter:blur(6px);
+}
+.rdn-hero-play{
+  position:absolute;right:16px;bottom:16px;
+  display:flex;align-items:center;gap:9px;
+  background:rgba(20,17,31,.8);border:1px solid #55407f;
+  padding:8px 15px 8px 9px;border-radius:999px;font-size:12.5px;
+  color:var(--rdn-text);backdrop-filter:blur(6px);
+}
+.rdn-hero-play i{
+  width:26px;height:26px;border-radius:50%;background:var(--rdn-gold);
+  display:grid;place-items:center;flex:none;
+}
+.rdn-hero-play i svg{width:11px;height:11px;}
+
+/* ============ 通用区块 ============ */
+.rdn-section{padding:62px 0;position:relative;}
+.rdn-sec-head{margin-bottom:34px;max-width:760px;}
+.rdn-sec-tag{
+  font-size:11.5px;letter-spacing:3px;color:var(--rdn-cyan);
+  display:block;margin-bottom:8px;text-transform:uppercase;
+}
+.rdn-sec-head h2{
+  font-size:clamp(22px,3vw,30px);letter-spacing:1px;line-height:1.35;
+}
+.rdn-sec-head h2 em{font-style:normal;color:var(--rdn-gold);}
+.rdn-sec-desc{font-size:14px;color:var(--rdn-dim);margin-top:10px;}
+.rdn-alt{background:linear-gradient(180deg,#181428,#14111f);}
+
+/* 焦点大图 */
+.rdn-focus-grid{display:grid;grid-template-columns:6fr 4fr;gap:26px;align-items:start;}
+.rdn-focus-main{
+  background:var(--rdn-panel);border:1px solid var(--rdn-line);
+  border-radius:var(--rdn-radius);overflow:hidden;transition:.25s;
+}
+.rdn-focus-main:hover{border-color:#6a4fbd;transform:translateY(-3px);}
+.rdn-focus-main figure{aspect-ratio:16/9;overflow:hidden;background:#1b1530;position:relative;}
+.rdn-focus-main figure svg{width:100%;height:100%;}
+.rdn-figure-tag{
+  position:absolute;left:14px;top:14px;font-size:11px;letter-spacing:1px;
+  background:rgba(20,17,31,.8);border:1px solid #55407f;color:var(--rdn-gold);
+  padding:3px 10px;border-radius:999px;
+}
+.rdn-focus-body{padding:20px 22px 22px;}
+.rdn-focus-body h3{font-size:19px;line-height:1.45;margin-bottom:10px;}
+.rdn-focus-body p{font-size:13.5px;color:var(--rdn-dim);margin-bottom:14px;}
+.rdn-focus-meta{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:#8d82ab;margin-bottom:16px;}
+.rdn-focus-meta b{color:var(--rdn-cyan);font-weight:500;}
+
+.rdn-side-list{display:flex;flex-direction:column;gap:14px;}
+.rdn-side-card{
+  background:linear-gradient(150deg,#241e3d,#1b1630);
+  border:1px solid var(--rdn-line);border-radius:12px;padding:16px 18px;
+  transition:.22s;
+}
+.rdn-side-card:hover{border-color:#6a4fbd;transform:translateX(4px);}
+.rdn-side-card h4{font-size:15px;line-height:1.5;margin-bottom:6px;}
+.rdn-side-card p{font-size:12.5px;color:var(--rdn-dim);margin-bottom:10px;}
+.rdn-side-meta{font-size:11.5px;color:#8d82ab;display:flex;gap:14px;flex-wrap:wrap;}
+
+.rdn-tags{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 0;}
+.rdn-tag{
+  font-size:11.5px;padding:3px 11px;border-radius:999px;
+  background:#2a2144;border:1px solid var(--rdn-line);color:var(--rdn-dim);
+  transition:.2s;cursor:pointer;
+}
+.rdn-tag:hover{color:var(--rdn-gold);border-color:var(--rdn-gold);}
+.rdn-tag.rdn-active{background:var(--rdn-gold);color:#241b3a;border-color:var(--rdn-gold);}
+
+/* 视频列表 */
+.rdn-video-list{display:flex;flex-direction:column;gap:16px;}
+.rdn-video-item{
+  display:grid;grid-template-columns:170px minmax(0,1fr);gap:20px;
+  background:var(--rdn-panel);border:1px solid var(--rdn-line);
+  border-radius:var(--rdn-radius);padding:16px;transition:.22s;
+}
+.rdn-video-item:hover{border-color:#6a4fbd;background:#261e41;}
+.rdn-video-thumb{
+  aspect-ratio:16/9;border-radius:9px;overflow:hidden;background:#1b1530;
+  position:relative;
+}
+.rdn-video-thumb svg{width:100%;height:100%;}
+.rdn-video-thumb .rdn-time{
+  position:absolute;right:6px;bottom:6px;font-size:10.5px;
+  background:rgba(0,0,0,.72);padding:1px 7px;border-radius:4px;color:#e8e2f5;
+}
+.rdn-video-main h4{font-size:16px;line-height:1.5;margin-bottom:7px;}
+.rdn-video-main p{font-size:13px;color:var(--rdn-dim);margin-bottom:10px;}
+.rdn-video-foot{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;
+  font-size:12px;color:#8d82ab;
+}
+.rdn-video-foot .rdn-author{color:var(--rdn-cyan);}
+.rdn-actions{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap;}
+.rdn-act{
+  display:inline-flex;align-items:center;gap:5px;font-size:12px;
+  padding:4px 11px;border-radius:999px;border:1px solid var(--rdn-line);
+  color:var(--rdn-dim);transition:.2s;background:#1e1836;
+}
+.rdn-act:hover{border-color:var(--rdn-violet);color:var(--rdn-text);}
+.rdn-act.rdn-liked{background:rgba(230,198,107,.14);border-color:var(--rdn-gold);color:var(--rdn-gold);}
+.rdn-act.rdn-faved{background:rgba(154,123,255,.16);border-color:var(--rdn-violet);color:#c9b6ff;}
+
+/* 专题 */
+.rdn-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.rdn-topic{
+  background:linear-gradient(165deg,#251e40,#1a1530);
+  border:1px solid var(--rdn-line);border-radius:var(--rdn-radius);
+  padding:22px;display:flex;flex-direction:column;transition:.25s;
+}
+.rdn-topic:hover{border-color:#6a4fbd;transform:translateY(-4px);}
+.rdn-topic-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.rdn-topic-status{
+  font-size:10.5px;letter-spacing:.5px;padding:2px 9px;border-radius:999px;
+  background:rgba(111,214,224,.14);color:var(--rdn-cyan);border:1px solid rgba(111,214,224,.3);
+}
+.rdn-topic-status.rdn-warm{background:rgba(230,198,107,.14);color:var(--rdn-gold);border-color:rgba(230,198,107,.32);}
+.rdn-topic h3{font-size:17px;margin-bottom:8px;line-height:1.45;}
+.rdn-topic > p{font-size:13px;color:var(--rdn-dim);margin-bottom:14px;}
+.rdn-topic ul{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
+.rdn-topic li{font-size:12.5px;color:#b8aed6;padding-left:14px;position:relative;}
+.rdn-topic li::before{
+  content:"";position:absolute;left:0;top:9px;width:5px;height:5px;
+  border-radius:50%;background:var(--rdn-violet);
+}
+
+/* 关键词解析 */
+.rdn-parse{
+  background:linear-gradient(160deg,#201a37,#171328);
+  border:1px solid var(--rdn-line);border-radius:20px;padding:38px 40px;
+}
+.rdn-parse h3{font-size:17.5px;color:var(--rdn-gold);margin:26px 0 10px;letter-spacing:.5px;}
+.rdn-parse h3:first-of-type{margin-top:0;}
+.rdn-parse p{font-size:14px;color:#c4bade;line-height:2.05;margin-bottom:12px;}
+.rdn-parse strong{color:var(--rdn-cyan);font-weight:600;}
+
+/* 作者矩阵 */
+.rdn-author-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;}
+.rdn-author{
+  background:var(--rdn-panel);border:1px solid var(--rdn-line);
+  border-radius:var(--rdn-radius);padding:20px;transition:.22s;
+  display:flex;flex-direction:column;
+}
+.rdn-author:hover{border-color:#6a4fbd;transform:translateY(-3px);}
+.rdn-author-top{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.rdn-avatar{
+  width:52px;height:52px;border-radius:50%;flex:none;overflow:hidden;
+  display:grid;place-items:center;font-size:19px;font-weight:700;color:#241b3a;
+}
+.rdn-author-name strong{display:block;font-size:15px;}
+.rdn-author-name span{font-size:11.5px;color:var(--rdn-dim);}
+.rdn-author p{font-size:12.8px;color:#b8aed6;line-height:1.85;margin-bottom:12px;flex:1;}
+.rdn-author-nums{display:flex;gap:18px;font-size:12px;color:var(--rdn-dim);margin-bottom:12px;}
+.rdn-author-nums b{color:var(--rdn-gold);font-weight:600;}
+.rdn-author-more{
+  align-self:flex-start;font-size:12px;color:var(--rdn-violet);
+  border:1px solid #4a3577;border-radius:999px;padding:4px 14px;transition:.2s;
+}
+.rdn-author-more:hover{background:#2a2144;color:var(--rdn-gold);border-color:var(--rdn-gold);}
+
+/* 评论区 */
+.rdn-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.rdn-comment{
+  background:linear-gradient(150deg,#241e3d,#1a1530);
+  border:1px solid var(--rdn-line);border-radius:12px;padding:18px;
+}
+.rdn-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.rdn-comment-dot{
+  width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-size:13px;font-weight:700;color:#241b3a;flex:none;
+}
+.rdn-comment-name{font-size:13px;font-weight:600;}
+.rdn-comment-stars{font-size:11px;color:var(--rdn-gold);letter-spacing:1px;}
+.rdn-comment p{font-size:13px;color:#c4bade;line-height:1.9;}
+.rdn-comment .rdn-comment-meta{font-size:11.5px;color:#8d82ab;margin-top:10px;}
+
+/* 排行榜 */
+.rdn-rank{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.rdn-rank-col{
+  background:var(--rdn-panel);border:1px solid var(--rdn-line);
+  border-radius:var(--rdn-radius);padding:20px;
+}
+.rdn-rank-col h3{font-size:15.5px;color:var(--rdn-gold);margin-bottom:14px;}
+.rdn-rank-col ol{display:flex;flex-direction:column;gap:11px;counter-reset:rdnrank;}
+.rdn-rank-col li{
+  display:flex;gap:11px;align-items:flex-start;font-size:13px;color:#c4bade;
+  counter-increment:rdnrank;
+}
+.rdn-rank-col li::before{
+  content:counter(rdnrank);flex:none;width:20px;height:20px;border-radius:6px;
+  background:#2f2550;color:var(--rdn-gold);font-size:11px;display:grid;place-items:center;
+  margin-top:2px;font-weight:700;
+}
+.rdn-rank-col li:nth-child(1)::before{background:var(--rdn-gold);color:#241b3a;}
+.rdn-rank-col li:nth-child(2)::before{background:#b8a6e8;color:#241b3a;}
+.rdn-rank-col li:nth-child(3)::before{background:#8f7cc0;color:#241b3a;}
+.rdn-rank-col li span{font-size:11px;color:#8d82ab;display:block;}
+
+/* 动态 + 合作 */
+.rdn-two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:start;}
+.rdn-news{border-left:2px solid var(--rdn-line);padding-left:20px;display:flex;flex-direction:column;gap:18px;}
+.rdn-news-item{position:relative;}
+.rdn-news-item::before{
+  content:"";position:absolute;left:-27px;top:8px;width:9px;height:9px;
+  border-radius:50%;background:var(--rdn-violet);border:2px solid var(--rdn-bg);
+}
+.rdn-news-item time{font-size:11.5px;color:var(--rdn-cyan);letter-spacing:.5px;}
+.rdn-news-item h4{font-size:14.5px;margin:3px 0 5px;}
+.rdn-news-item p{font-size:12.8px;color:var(--rdn-dim);}
+
+.rdn-partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px;}
+.rdn-partner{
+  height:74px;border-radius:11px;border:1px solid var(--rdn-line);
+  display:grid;place-items:center;font-size:12.5px;color:var(--rdn-dim);
+  background:linear-gradient(150deg,#241e3d,#1b1630);letter-spacing:.5px;
+  transition:.2s;text-align:center;padding:6px;
+}
+.rdn-partner:hover{color:var(--rdn-gold);border-color:#6a4fbd;}
+
+/* FAQ */
+.rdn-faq{display:flex;flex-direction:column;gap:11px;max-width:860px;}
+.rdn-faq details{
+  background:var(--rdn-panel);border:1px solid var(--rdn-line);
+  border-radius:11px;padding:15px 19px;transition:.2s;
+}
+.rdn-faq details[open]{border-color:#6a4fbd;background:#261e41;}
+.rdn-faq summary{
+  font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.rdn-faq summary::-webkit-details-marker{display:none;}
+.rdn-faq summary::after{
+  content:"+";color:var(--rdn-gold);font-size:19px;line-height:1;flex:none;transition:.2s;
+}
+.rdn-faq details[open] summary::after{transform:rotate(45deg);}
+.rdn-faq p{font-size:13px;color:var(--rdn-dim);margin-top:10px;line-height:1.9;}
+
+/* 页脚 */
+.rdn-footer{background:#100d1a;border-top:1px solid var(--rdn-line);padding:52px 0 28px;margin-top:20px;}
+.rdn-foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px;}
+.rdn-foot-brand .rdn-brand{margin-bottom:14px;}
+.rdn-foot-brand p{font-size:12.8px;color:var(--rdn-dim);line-height:1.9;max-width:320px;}
+.rdn-foot-col h4{font-size:13px;color:var(--rdn-gold);margin-bottom:14px;letter-spacing:1px;}
+.rdn-foot-col a,.rdn-foot-col span{display:block;font-size:12.8px;color:var(--rdn-dim);margin-bottom:9px;transition:.2s;}
+.rdn-foot-col a:hover{color:var(--rdn-text);}
+.rdn-foot-bottom{
+  border-top:1px solid #241e3d;padding-top:20px;display:flex;flex-wrap:wrap;
+  gap:10px 22px;justify-content:space-between;font-size:12px;color:#726a8b;
+}
+
+/* Toast & 弹窗 */
+.rdn-toast{
+  position:fixed;left:50%;bottom:38px;transform:translateX(-50%) translateY(18px);
+  background:#2c2350;border:1px solid #5c45a0;color:#f2ecff;
+  padding:10px 22px;border-radius:999px;font-size:13px;z-index:200;
+  opacity:0;pointer-events:none;transition:.28s;box-shadow:0 12px 34px rgba(0,0,0,.5);
+  max-width:90vw;text-align:center;
+}
+.rdn-toast.rdn-on{opacity:1;transform:translateX(-50%) translateY(0);}
+
+.rdn-modal{
+  position:fixed;inset:0;z-index:180;display:grid;place-items:center;
+  background:rgba(10,8,18,.72);backdrop-filter:blur(4px);
+  opacity:0;pointer-events:none;transition:.25s;padding:20px;
+}
+.rdn-modal.rdn-on{opacity:1;pointer-events:auto;}
+.rdn-modal-card{
+  background:linear-gradient(165deg,#261e43,#1a1530);
+  border:1px solid #55407f;border-radius:18px;padding:28px;
+  width:min(520px,100%);max-height:85vh;overflow:auto;
+  transform:translateY(14px);transition:.25s;
+}
+.rdn-modal.rdn-on .rdn-modal-card{transform:translateY(0);}
+.rdn-modal-card h3{font-size:18px;margin-bottom:6px;color:var(--rdn-gold);}
+.rdn-modal-card .rdn-modal-sub{font-size:12.5px;color:var(--rdn-dim);margin-bottom:18px;}
+.rdn-modal-card label{display:block;font-size:12.5px;color:var(--rdn-dim);margin-bottom:6px;}
+.rdn-modal-card input,.rdn-modal-card textarea{
+  width:100%;background:#1b1630;border:1px solid var(--rdn-line);
+  border-radius:9px;padding:10px 13px;color:var(--rdn-text);font-size:13.5px;
+  font-family:inherit;outline:none;margin-bottom:14px;transition:.2s;
+}
+.rdn-modal-card input:focus,.rdn-modal-card textarea:focus{border-color:var(--rdn-violet);}
+.rdn-modal-card textarea{min-height:96px;resize:vertical;}
+.rdn-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px;}
+
+.rdn-totop{
+  position:fixed;right:22px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(145deg,#4a3577,#2c2149);border:1px solid #6a4fbd;
+  display:grid;place-items:center;z-index:120;transition:.25s;
+  opacity:0;pointer-events:none;box-shadow:0 8px 22px rgba(0,0,0,.4);
+}
+.rdn-totop.rdn-show{opacity:1;pointer-events:auto;}
+.rdn-totop:hover{background:var(--rdn-gold);border-color:var(--rdn-gold);}
+.rdn-totop svg{width:17px;height:17px;stroke:var(--rdn-text);transition:.2s;}
+.rdn-totop:hover svg{stroke:#241b3a;}
+
+/* 响应式 */
+@media(max-width:1000px){
+  .rdn-hero-grid{grid-template-columns:1fr;gap:34px;}
+  .rdn-hero-figure{aspect-ratio:16/10;max-width:520px;}
+  .rdn-focus-grid{grid-template-columns:1fr;}
+  .rdn-foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:820px){
+  .rdn-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#191430;border-bottom:1px solid var(--rdn-line);
+    padding:14px 5vw 20px;flex-direction:column;gap:2px;
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+  }
+  .rdn-nav.rdn-open{display:flex;}
+  .rdn-nav a{padding:10px 12px;font-size:14.5px;}
+  .rdn-head-inner{position:relative;flex-wrap:wrap;}
+  .rdn-burger{display:grid;order:2;margin-left:auto;}
+  .rdn-search{order:3;width:100%;}
+  .rdn-search-rel{width:100%;}
+  .rdn-search-box{width:100%;}
+  .rdn-search-box input{width:100%;flex:1;}
+  .rdn-comment-grid{grid-template-columns:1fr;}
+  .rdn-video-item{grid-template-columns:1fr;gap:14px;}
+  .rdn-video-thumb{max-width:100%;}
+  .rdn-parse{padding:26px 20px;}
+}
+@media(max-width:560px){
+  .rdn-stats{grid-template-columns:1fr;}
+  .rdn-foot-grid{grid-template-columns:1fr;}
+  .rdn-hero{padding:36px 0 44px;}
+  .rdn-section{padding:44px 0;}
+  .rdn-actions{margin-left:0;width:100%;}
+  .rdn-notice .rdn-wrap{font-size:12px;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告条 + 页头 ===== -->
+<div class="rdn-sticky">
+  <div class="rdn-notice" role="region" aria-label="官方公告">
+    <div class="rdn-wrap">
+      <span class="rdn-notice-tag">官方发布</span>
+      <div class="rdn-notice-track">
+        <b>11 月 22 日更新：</b>「雷电将军」年度影像企划《雷光之下》第 6 集上线，同步开放 12 位创作者联合投稿通道；本周新增高清正版片源 47 条，专题《雷与泪的叙事》已更新至第 3 期。
+      </div>
+    </div>
+  </div>
+
+  <header class="rdn-header">
+    <div class="rdn-wrap rdn-head-inner">
+      <a class="rdn-brand" href="#top" aria-label="雷电将军官方网站首页">
+        <span class="rdn-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M34 6 L17 35 h12 l-4 23 L47 25 H34 Z" fill="#e6c66b"/></svg>
+        </span>
+        <span class="rdn-brand-txt">
+          <strong>雷电将军</strong>
+          <span>RAIDEN OFFICIAL</span>
+        </span>
+      </a>
+
+      <nav class="rdn-nav" id="rdnNav" aria-label="主导航">
+        <a href="#focus">焦点内容</a>
+        <a href="#videos">视频社区</a>
+        <a href="#topics">专题企划</a>
+        <a href="#parse">品牌解析</a>
+        <a href="#authors">创作者</a>
+        <a href="#comments">用户口碑</a>
+        <a href="#news">企业动态</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+
+      <div class="rdn-search">
+        <div class="rdn-search-rel">
+          <form class="rdn-search-box" id="rdnSearchForm" role="search">
+            <label class="rdn-sr" for="rdnSearchInput">搜索雷电将军相关内容</label>
+            <input type="search" id="rdnSearchInput" placeholder="搜索雷电将军视频、专题、创作者" autocomplete="off">
+            <button type="submit">搜索</button>
+          </form>
+          <div class="rdn-search-hint" id="rdnSearchHint" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <button class="rdn-burger" id="rdnBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="rdnNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- ===== S2 品牌首屏 ===== -->
+  <section class="rdn-hero" aria-labelledby="rdnHeroTitle">
+    <div class="rdn-wrap rdn-hero-grid">
+      <div class="rdn-hero-copy">
+        <span class="rdn-kicker"><i></i>雷电将军官方网站 · 企业级影像品牌</span>
+        <h1 id="rdnHeroTitle">雷电将军</h1>
+        <p class="rdn-hero-sub">雷光与静水的影像档案</p>
+        <p class="rdn-hero-lead">一座为原创影像而生的雷电将军视频品牌门户，聚集创作者、记录真实瞬间，持续运营高品质内容生态。</p>
+        <p class="rdn-hero-intro">
+          作为深耕雷电将军题材的<b>官方网站</b>，平台以「雷光之下，静水之心」为品牌主张，专注雷元素影像叙事、同人短片、幕后纪实与深度访谈。我们尊重每一位创作者的表达，以正版高清片源、严谨的内容审核与温暖社区氛围，陪伴超过两百万人一起记录光影。企业团队持续投入原创扶持、创作培训与官方发布体系，让值得信赖的内容被更多人看见。
+        </p>
+        <div class="rdn-cta">
+          <a class="rdn-btn rdn-btn-gold" href="#videos">
+            进入视频社区
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="rdn-btn rdn-btn-ghost" href="#topics">查看年度专题</a>
+          <button class="rdn-btn rdn-btn-violet" type="button" data-rdn-open="submit">投稿入口</button>
+        </div>
+        <div class="rdn-stats">
+          <div class="rdn-stat"><strong>2,480+</strong><span>原创高清视频</span></div>
+          <div class="rdn-stat"><strong>216 万</strong><span>社区注册用户</span></div>
+          <div class="rdn-stat"><strong>98.2%</strong><span>内容好评率</span></div>
+        </div>
+      </div>
+
+      <div class="rdn-hero-visual">
+        <figure class="rdn-hero-figure">
+          <svg viewBox="0 0 640 800" role="img" aria-label="雷电将军首屏主视觉：雷光下的长夜庭院与持刀而立的身影">
+            <defs>
+              <linearGradient id="rdnHeroSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1b1435"/>
+                <stop offset="0.55" stop-color="#2e2155"/>
+                <stop offset="1" stop-color="#3d2a6b"/>
+              </linearGradient>
+              <radialGradient id="rdnHeroGlow" cx="0.5" cy="0.34" r="0.5">
+                <stop offset="0" stop-color="#e6c66b" stop-opacity="0.55"/>
+                <stop offset="1" stop-color="#e6c66b" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="rdnHeroBolt" x1="0" y1="0" x2="0.3" y2="1">
+                <stop offset="0" stop-color="#fff6d8"/>
+                <stop offset="1" stop-color="#e6c66b"/>
+              </linearGradient>
+              <linearGradient id="rdnHeroFloor" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#241a44"/>
+                <stop offset="1" stop-color="#120e22"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="800" fill="url(#rdnHeroSky)"/>
+            <circle cx="330" cy="270" r="230" fill="url(#rdnHeroGlow)"/>
+            <circle cx="330" cy="270" r="118" fill="none" stroke="#7b62c9" stroke-width="1.2" opacity="0.55"/>
+            <circle cx="330" cy="270" r="88" fill="none" stroke="#e6c66b" stroke-width="0.8" opacity="0.4"/>
+            <path d="M300 96 L262 226 h58 l-18 104 84 -150 h-62 l26 -84 Z" fill="url(#rdnHeroBolt)" opacity="0.92"/>
+            <path d="M470 70 L446 152 h36 l-14 66 54 -96 h-40 l18 -52 Z" fill="#9a7bff" opacity="0.55"/>
+            <path d="M150 120 L132 186 h26 l-10 48 40 -70 h-30 l14 -44 Z" fill="#6fd6e0" opacity="0.42"/>
+            <path d="M0 560 Q160 500 320 552 T640 540 L640 800 L0 800 Z" fill="url(#rdnHeroFloor)"/>
+            <path d="M0 588 Q180 542 360 584 T640 574" fill="none" stroke="#4c3a86" stroke-width="1.4" opacity="0.8"/>
+            <g opacity="0.9">
+              <path d="M158 640 h76 v-8 h-76 Z" fill="#4a3577"/>
+              <rect x="176" y="500" width="4" height="132" fill="#4a3577"/>
+              <rect x="212" y="516" width="4" height="116" fill="#4a3577"/>
+              <path d="M164 500 h56 l-8 -18 h-40 Z" fill="#63499e"/>
+              <circle cx="192" cy="512" r="5" fill="#e6c66b"/>
+            </g>
+            <g opacity="0.85">
+              <path d="M470 640 h70 v-8 h-70 Z" fill="#4a3577"/>
+              <rect x="486" y="516" width="4" height="116" fill="#4a3577"/>
+              <rect x="520" y="532" width="4" height="100" fill="#4a3577"/>
+              <path d="M476 516 h52 l-8 -16 h-36 Z" fill="#63499e"/>
+              <circle cx="502" cy="512" r="4.5" fill="#6fd6e0"/>
+            </g>
+            <g>
+              <circle cx="320" cy="452" r="30" fill="#2b2150"/>
+              <path d="M290 452 q30 -46 60 0 v-20 q-30 -34 -60 0 Z" fill="#8c74d6"/>
+              <path d="M296 470 q24 22 48 0 l8 96 q-32 16 -64 0 Z" fill="#342861"/>
+              <path d="M296 470 q24 18 48 0 l-4 40 q-20 12 -40 0 Z" fill="#4b3a86"/>
+              <path d="M292 566 h56 l10 74 q-38 14 -76 0 Z" fill="#261d49"/>
+              <path d="M368 470 l14 -110 l6 2 l-10 112 Z" fill="#cbb2ff"/>
+              <path d="M376 356 l-6 -22 l18 8 Z" fill="#e6c66b"/>
+            </g>
+            <g fill="#e6c66b">
+              <circle cx="248" cy="612" r="2.4" opacity="0.9"/>
+              <circle cx="402" cy="648" r="2" opacity="0.8"/>
+              <circle cx="336" cy="690" r="2.6" opacity="0.7"/>
+              <circle cx="286" cy="726" r="1.8" opacity="0.6"/>
+              <circle cx="452" cy="600" r="1.8" opacity="0.7"/>
+            </g>
+            <g stroke="#7b62c9" stroke-width="1" opacity="0.5">
+              <path d="M60 300 L120 320"/>
+              <path d="M540 340 L596 316"/>
+              <path d="M96 430 L150 448"/>
+            </g>
+          </svg>
+          <span class="rdn-hero-badge">官方主视觉 · 雷光长夜</span>
+          <span class="rdn-hero-play">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="#241b3a"><path d="M8 5v14l11-7z"/></svg></i>
+            品牌形象片 · 03:26
+          </span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S3 焦点内容 + 视频流 ===== -->
+  <section class="rdn-section rdn-alt" id="focus" aria-labelledby="rdnFocusTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Focus / 本周焦点</span>
+        <h2 id="rdnFocusTitle">焦点内容：雷电将军<em>官方精选</em>影像</h2>
+        <p class="rdn-sec-desc">由编辑部与创作者社区共同推选，本周雷电将军值得一看的精品影像与深度解说，全部为正版高清片源。</p>
+      </div>
+
+      <div class="rdn-focus-grid">
+        <article class="rdn-focus-main">
+          <figure>
+            <svg viewBox="0 0 800 450" role="img" aria-label="焦点封面：雨夜庭院中雷光映照人物侧脸与翻飞的衣袖">
+              <defs>
+                <linearGradient id="rdnFocusBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#241a44"/>
+                  <stop offset="1" stop-color="#12101f"/>
+                </linearGradient>
+                <radialGradient id="rdnFocusHalo" cx="0.68" cy="0.32" r="0.42">
+                  <stop offset="0" stop-color="#e6c66b" stop-opacity="0.5"/>
+                  <stop offset="1" stop-color="#e6c66b" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#rdnFocusBg)"/>
+              <circle cx="545" cy="146" r="180" fill="url(#rdnFocusHalo)"/>
+              <g stroke="#5c45a0" stroke-width="1.4" opacity="0.6">
+                <path d="M0 320 Q200 280 400 316 T800 300"/>
+                <path d="M0 356 Q220 320 420 352 T800 336"/>
+                <path d="M0 392 Q240 358 440 388 T800 372"/>
+              </g>
+              <g opacity="0.85">
+                <path d="M420 300 q46 18 92 0 l-14 -104 q-32 16 -64 0 Z" fill="#3a2c6e"/>
+                <path d="M446 300 l-16 84 q40 14 80 0 l-16 -84 Z" fill="#281f4f"/>
+                <circle cx="466" cy="176" r="24" fill="#2b2150"/>
+                <path d="M440 172 q26 -38 52 0 v-16 q-26 -28 -52 0 Z" fill="#8c74d6"/>
+              </g>
+              <path d="M300 60 L268 168 h44 l-14 78 62 -112 h-48 l20 -74 Z" fill="#e6c66b" opacity="0.9"/>
+              <g stroke="#8f7cc0" stroke-width="2" opacity="0.45">
+                <path d="M120 130 L180 150"/><path d="M96 214 L150 226"/><path d="M700 380 L640 360"/>
+              </g>
+              <g fill="#e6c66b" opacity="0.75">
+                <circle cx="180" cy="360" r="2"/><circle cx="240" cy="400" r="1.6"/>
+                <circle cx="620" cy="250" r="2.2"/><circle cx="680" cy="320" r="1.6"/>
+              </g>
+            </svg>
+            <span class="rdn-figure-tag">官方精选 · 深度纪实</span>
+          </figure>
+          <div class="rdn-focus-body">
+            <h3>《雷光之下》第 6 集：眼泪流不停的一夜，翻白眼背后是怎样的克制</h3>
+            <p>品牌年度重点纪实短片，跟拍三位创作者在雨夜庭院完成一场情绪戏的全过程。从分镜推演、雷光布光到演员的眼泪与一次意外的翻白眼，完整记录一段真实而克制的高光时刻，被社区称为「今年最值得信赖的雷电将军幕后影像」。</p>
+            <div class="rdn-focus-meta">
+              <span>创作者 <b>雨夜巡雷</b></span>
+              <span>播放 <b>86.4 万</b></span>
+              <span>点赞 <b>3.2 万</b></span>
+              <span>时长 18:42</span>
+            </div>
+            <div class="rdn-actions">
+              <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>32047</span></button>
+              <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+              <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              <button class="rdn-act" type="button" data-rdn-open="report">反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="rdn-side-list">
+          <article class="rdn-side-card">
+            <h4>专题导读：一场「被驯服」的表演课</h4>
+            <p>表演指导解析雷电将军情绪层次，从紧绷到下坠，三分钟讲清眼泪的时机。</p>
+            <div class="rdn-side-meta"><span>创作幕后</span><span>12:08</span><span>4.6 万播放</span></div>
+          </article>
+          <article class="rdn-side-card">
+            <h4>行业观察：同人影像的品质拐点</h4>
+            <p>从器材到分镜，雷电将军题材内容为何在 2026 年迎来制作水准跃迁。</p>
+            <div class="rdn-side-meta"><span>行业观察</span><span>09:34</span><span>2.9 万播放</span></div>
+          </article>
+          <article class="rdn-side-card">
+            <h4>创作者访谈：翻白眼那一秒的意外</h4>
+            <p>演员与剪辑师对谈，讲述一个即兴反应如何成为全片最被讨论的镜头。</p>
+            <div class="rdn-side-meta"><span>人物访谈</span><span>15:20</span><span>5.1 万播放</span></div>
+          </article>
+          <article class="rdn-side-card">
+            <h4>实用技巧：雷光夜景布光三步法</h4>
+            <p>低成本呈现雷电将军标志性冷光氛围，含器材清单与色温对照表。</p>
+            <div class="rdn-side-meta"><span>教程干货</span><span>11:47</span><span>7.3 万播放</span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="rdn-tags" id="rdnTagBar" aria-label="内容标签筛选">
+        <button class="rdn-tag rdn-active" type="button" data-rdn-filter="all">全部</button>
+        <button class="rdn-tag" type="button" data-rdn-filter="幕后">创作幕后</button>
+        <button class="rdn-tag" type="button" data-rdn-filter="访谈">人物访谈</button>
+        <button class="rdn-tag" type="button" data-rdn-filter="教程">教程干货</button>
+        <button class="rdn-tag" type="button" data-rdn-filter="故事">情感故事</button>
+        <button class="rdn-tag" type="button" data-rdn-filter="观察">行业观察</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 视频社区列表（单列图文列表布局） ===== -->
+  <section class="rdn-section" id="videos" aria-labelledby="rdnVideoTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Community / 视频社区</span>
+        <h2 id="rdnVideoTitle">雷电将军视频社区 · <em>热门作品流</em></h2>
+        <p class="rdn-sec-desc">雷电将军官方网站的创作者社区持续更新，以下条目均为官方发布与创作者投稿的原创高清作品，支持点赞、收藏与分享。</p>
+      </div>
+
+      <div class="rdn-video-list" id="rdnVideoList">
+
+        <article class="rdn-video-item" data-rdn-cat="幕后">
+          <div class="rdn-video-thumb">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：雨幕中的紫色灯笼与撑伞侧影">
+              <defs><linearGradient id="rdnV1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1f52"/><stop offset="1" stop-color="#120f20"/></linearGradient></defs>
+              <rect width="320" height="180" fill="url(#rdnV1)"/>
+              <g stroke="#6b52b8" stroke-width="1.2" opacity="0.6">
+                <path d="M30 0 L22 60"/><path d="M70 0 L66 54"/><path d="M110 0 L114 58"/>
+                <path d="M210 0 L204 56"/><path d="M250 0 L256 60"/><path d="M290 0 L294 52"/>
+              </g>
+              <circle cx="160" cy="60" r="26" fill="#7a5fd0" opacity="0.5"/>
+              <circle cx="160" cy="60" r="12" fill="#e6c66b" opacity="0.85"/>
+              <ellipse cx="160" cy="130" rx="52" ry="12" fill="#8c74d6" opacity="0.35"/>
+              <path d="M132 132 q28 16 56 0 l-8 -40 h-40 Z" fill="#2e2358"/>
+              <circle cx="160" cy="88" r="12" fill="#332760"/>
+            </svg>
+            <span class="rdn-time">06:12</span>
+          </div>
+          <div class="rdn-video-main">
+            <h4>雨夜灯笼下的三分钟：雷电将军情绪戏拍摄全记录</h4>
+            <p>跟组八小时的幕后纪实，记录一场从笑场到落泪的完整情绪推进，包含演员走位、雨具控制与灯光微调细节。</p>
+            <div class="rdn-video-foot">
+              <span class="rdn-author">雨夜巡雷</span>
+              <span>播放 12.8 万</span>
+              <span>点赞 7621</span>
+              <span>收藏 2904</span>
+              <div class="rdn-actions">
+                <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>7621</span></button>
+                <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+                <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rdn-video-item" data-rdn-cat="访谈">
+          <div class="rdn-video-thumb">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：两把椅子相对而置的访谈场景与暖色话筒">
+              <defs><linearGradient id="rdnV2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a5e"/><stop offset="1" stop-color="#1a1530"/></linearGradient></defs>
+              <rect width="320" height="180" fill="url(#rdnV2)"/>
+              <rect x="40" y="108" width="66" height="8" rx="3" fill="#6b52b8"/>
+              <rect x="62" y="116" width="6" height="36" fill="#5c4599"/>
+              <rect x="80" y="116" width="6" height="36" fill="#5c4599"/>
+              <rect x="214" y="108" width="66" height="8" rx="3" fill="#6b52b8"/>
+              <rect x="236" y="116" width="6" height="36" fill="#5c4599"/>
+              <rect x="254" y="116" width="6" height="36" fill="#5c4599"/>
+              <circle cx="160" cy="76" r="18" fill="#e6c66b" opacity="0.85"/>
+              <path d="M160 94 l-10 30 h20 Z" fill="#8c74d6"/>
+              <circle cx="160" cy="72" r="8" fill="#241b3a"/>
+              <path d="M20 44 q46 -22 92 0" stroke="#6fd6e0" stroke-width="1.2" fill="none" opacity="0.6"/>
+              <path d="M210 44 q46 -22 92 0" stroke="#9a7bff" stroke-width="1.2" fill="none" opacity="0.6"/>
+            </svg>
+            <span class="rdn-time">15:20</span>
+          </div>
+          <div class="rdn-video-main">
+            <h4>演员谈「翻白眼」：一次意外如何成为全片记忆点</h4>
+            <p>深度访谈，聊聊被观众反复截图的那个瞬间。演员讲述收工前的疲惫、即兴的反应，以及剪辑师为何决定保留它。</p>
+            <div class="rdn-video-foot">
+              <span class="rdn-author">镜前幕后社</span>
+              <span>播放 9.6 万</span>
+              <span>点赞 5108</span>
+              <span>收藏 2380</span>
+              <div class="rdn-actions">
+                <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>5108</span></button>
+                <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+                <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rdn-video-item" data-rdn-cat="教程">
+          <div class="rdn-video-thumb">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：蓝色调色板与灯位示意图">
+              <defs><linearGradient id="rdnV3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2c4a"/><stop offset="1" stop-color="#101a2c"/></linearGradient></defs>
+              <rect width="320" height="180" fill="url(#rdnV3)"/>
+              <circle cx="90" cy="88" r="34" fill="none" stroke="#6fd6e0" stroke-width="2" opacity="0.8"/>
+              <circle cx="90" cy="88" r="16" fill="#6fd6e0" opacity="0.5"/>
+              <g stroke="#8f7cc0" stroke-width="1.5" fill="none" opacity="0.7">
+                <path d="M140 60 L240 60"/><path d="M140 88 L240 88"/><path d="M140 116 L240 116"/>
+              </g>
+              <rect x="240" y="50" width="8" height="20" fill="#8f7cc0"/>
+              <rect x="240" y="78" width="8" height="20" fill="#6fd6e0"/>
+              <rect x="240" y="106" width="8" height="20" fill="#e6c66b"/>
+              <circle cx="200" cy="140" r="14" fill="#2b2150"/>
+              <path d="M200 126 l-8 14 h16 Z" fill="#e6c66b" opacity="0.8"/>
+            </svg>
+            <span class="rdn-time">11:47</span>
+          </div>
+          <div class="rdn-video-main">
+            <h4>雷光夜景布光三步法：冷光氛围的低成本方案</h4>
+            <p>从主光位置、色温设定到环境反射补光，完整演示雷电将军标志性冷光氛围的搭建过程，附器材清单与参数表。</p>
+            <div class="rdn-video-foot">
+              <span class="rdn-author">光与雷实验室</span>
+              <span>播放 15.3 万</span>
+              <span>点赞 9314</span>
+              <span>收藏 6120</span>
+              <div class="rdn-actions">
+                <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>9314</span></button>
+                <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+                <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rdn-video-item" data-rdn-cat="故事">
+          <div class="rdn-video-thumb">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：半开的障子门后透出月光与一枝紫藤">
+              <defs><linearGradient id="rdnV4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241a44"/><stop offset="1" stop-color="#3a2a5e"/></linearGradient></defs>
+              <rect width="320" height="180" fill="url(#rdnV4)"/>
+              <rect x="70" y="26" width="180" height="128" fill="#1b1530" opacity="0.7"/>
+              <g fill="none" stroke="#6b52b8" stroke-width="1.6">
+                <rect x="70" y="26" width="180" height="128"/>
+                <path d="M130 26 V154"/><path d="M190 26 V154"/>
+                <path d="M70 90 H250"/>
+              </g>
+              <circle cx="160" cy="60" r="16" fill="#f2e3b0" opacity="0.75"/>
+              <path d="M226 118 q10 -26 26 -34 q-4 22 -18 34 q10 2 18 10 q-18 2 -26 -10 Z" fill="#8c74d6"/>
+              <circle cx="240" cy="60" r="2" fill="#e6c66b"/><circle cx="244" cy="74" r="1.6" fill="#e6c66b"/>
+            </svg>
+            <span class="rdn-time">08:55</span>
+          </div>
+          <div class="rdn-video-main">
+            <h4>眼泪流不停的那一夜：一位创作者的自述影像</h4>
+            <p>没有台词的八分钟。创作者以第一人称视角记录自己反复重拍同一场戏的夜晚，及至最后释然的眼泪，温暖而真实。</p>
+            <div class="rdn-video-foot">
+              <span class="rdn-author">长安纸灯</span>
+              <span>播放 7.4 万</span>
+              <span>点赞 6082</span>
+              <span>收藏 3410</span>
+              <div class="rdn-actions">
+                <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>6082</span></button>
+                <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+                <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rdn-video-item" data-rdn-cat="观察">
+          <div class="rdn-video-thumb">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：上升的数据折线与柱状图的深色统计图">
+              <defs><linearGradient id="rdnV5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2340"/><stop offset="1" stop-color="#101522"/></linearGradient></defs>
+              <rect width="320" height="180" fill="url(#rdnV5)"/>
+              <g opacity="0.5" stroke="#4a5c8f" stroke-width="1"><path d="M30 150 H290"/><path d="M30 110 H290"/><path d="M30 70 H290"/></g>
+              <g fill="#6fd6e0" opacity="0.8">
+                <rect x="52" y="118" width="16" height="32"/><rect x="86" y="100" width="16" height="50"/>
+                <rect x="120" y="86" width="16" height="64"/><rect x="154" y="64" width="16" height="86"/>
+                <rect x="188" y="76" width="16" height="74"/><rect x="222" y="44" width="16" height="106"/>
+              </g>
+              <path d="M46 126 L102 108 L136 92 L170 70 L204 82 L238 50 L276 40" fill="none" stroke="#e6c66b" stroke-width="2.2"/>
+              <circle cx="276" cy="40" r="4" fill="#e6c66b"/>
+            </svg>
+            <span class="rdn-time">13:02</span>
+          </div>
+          <div class="rdn-video-main">
+            <h4>2026 雷电将军内容生态观察：品质如何被重新定义</h4>
+            <p>基于平台百万级播放数据，分析雷电将军题材在过去一年的内容结构变化，从数量扩张走向品质深耕的关键转折。</p>
+            <div class="rdn-video-foot">
+              <span class="rdn-author">内容生态研究所</span>
+              <span>播放 6.2 万</span>
+              <span>点赞 4188</span>
+              <span>收藏 2690</span>
+              <div class="rdn-actions">
+                <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>4188</span></button>
+                <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+                <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rdn-video-item" data-rdn-cat="幕后">
+          <div class="rdn-video-thumb">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：手提灯照亮的老式场记板与木纹桌面">
+              <defs><linearGradient id="rdnV6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2c1e"/><stop offset="1" stop-color="#1d170f"/></linearGradient></defs>
+              <rect width="320" height="180" fill="url(#rdnV6)"/>
+              <g opacity="0.45" stroke="#8a6a3e" stroke-width="1.4">
+                <path d="M0 40 Q80 20 160 44 T320 36"/><path d="M0 120 Q80 100 160 124 T320 116"/>
+              </g>
+              <rect x="98" y="56" width="124" height="78" rx="4" fill="#1a140e" stroke="#c9a94c" stroke-width="1.6"/>
+              <path d="M98 82 H222M98 108 H222" stroke="#c9a94c" stroke-width="1.2"/>
+              <path d="M140 56 V134M180 56 V134" stroke="#c9a94c" stroke-width="1.2"/>
+              <circle cx="264" cy="60" r="18" fill="#e6c66b" opacity="0.65"/>
+              <rect x="260" y="78" width="8" height="26" fill="#8a6a3e"/>
+            </svg>
+            <span class="rdn-time">10:28</span>
+          </div>
+          <div class="rdn-video-main">
+            <h4>从场记板到成片：一支雷电将军短片的三周制作日志</h4>
+            <p>团队完整分享从选题、剧本围读到实拍与调色的三周日志，中途两次推翻方案，也记录下社区共创的反馈如何改变结局。</p>
+            <div class="rdn-video-foot">
+              <span class="rdn-author">拾光制片组</span>
+              <span>播放 5.8 万</span>
+              <span>点赞 3876</span>
+              <span>收藏 2104</span>
+              <div class="rdn-actions">
+                <button class="rdn-act" type="button" data-rdn-like><span aria-hidden="true">♡</span> <span data-rdn-like-num>3876</span></button>
+                <button class="rdn-act" type="button" data-rdn-fav><span aria-hidden="true">☆</span> 收藏</button>
+                <button class="rdn-act" type="button" data-rdn-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S4 专题企划 ===== -->
+  <section class="rdn-section rdn-alt" id="topics" aria-labelledby="rdnTopicTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Series / 专题企划</span>
+        <h2 id="rdnTopicTitle">雷电将军<em>专题企划</em>：雷与泪的叙事</h2>
+        <p class="rdn-sec-desc">由雷电将军官方网站策划的系列专题，围绕情绪、光影、表演与社区共创持续更新，欢迎创作者报名参与。</p>
+      </div>
+
+      <div class="rdn-topic-grid">
+        <article class="rdn-topic">
+          <div class="rdn-topic-head">
+            <span class="rdn-topic-status">更新中 · 第 3 期</span>
+          </div>
+          <h3>专题一：眼泪的时机——情绪戏的十种拍法</h3>
+          <p>从压抑到释放，梳理雷电将军题材中「眼泪」作为叙事支点的十种处理路径，每期配一支示范短片与导演手记。</p>
+          <ul>
+            <li>第 1 期：不落泪的悲伤，如何用手部动作替代</li>
+            <li>第 2 期：逆光下的泪光，物理反光的低成本实现</li>
+            <li>第 3 期：一条过还是反复重拍，表演节奏的取舍</li>
+          </ul>
+        </article>
+
+        <article class="rdn-topic">
+          <div class="rdn-topic-head">
+            <span class="rdn-topic-status rdn-warm">征集中 · 报名开放</span>
+          </div>
+          <h3>专题二：雷光之下——年度联合创作计划</h3>
+          <p>面向全体创作者的联合企划，同一个雷夜设定，不同的人写出不同的结局。入选作品将获得官方高清修复与首页推荐。</p>
+          <ul>
+            <li>第 1 期：雨夜相遇，三段不约而同的等待</li>
+            <li>第 2 期：翻白眼的瞬间，五种幽默解法</li>
+            <li>第 3 期：被驯服的不是雷，是沉默</li>
+          </ul>
+        </article>
+
+        <article class="rdn-topic">
+          <div class="rdn-topic-head">
+            <span class="rdn-topic-status">已完结 · 共 5 期</span>
+          </div>
+          <h3>专题三：幕后工匠——雷电将军影像技术档案</h3>
+          <p>聚焦制作技术，记录灯光、调色、声音设计与后期合成的专业方法，是平台内口碑最好的垂直领域技术专题。</p>
+          <ul>
+            <li>灯光篇：一灯三用的极简布光方案</li>
+            <li>调色篇：紫与金的冷暖平衡如何建立</li>
+            <li>声音篇：雷声远近与情绪张力的对应关系</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 品牌解析（关键词解析 ≥800字） ===== -->
+  <section class="rdn-section" id="parse" aria-labelledby="rdnParseTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Brand / 品牌解析</span>
+        <h2 id="rdnParseTitle">深度解析：雷电将军为何成为<em>高品质影像</em>的代名词</h2>
+        <p class="rdn-sec-desc">从品牌建设、内容生态与社区运营三个角度，理解这个雷电将军官方网站持续深耕的垂直领域。</p>
+      </div>
+
+      <div class="rdn-parse">
+        <h3>一、品牌定位：从角色符号到影像品牌</h3>
+        <p>雷电将军最初只是一个被反复讨论的角色符号，但在过去数年的内容沉淀中，它逐渐生长出一个完整的影像品牌。作为官方网站，我们很清楚一件事：符号可以被消费，品牌只能被信任。因此平台从创立之初就把「正版、高清、原创」写进底层规则，所有上架内容均需经过来源核验与画质检测，重点作品还会由企业内容团队进行二次校对。这种看起来有些笨拙的坚持，让雷电将军相关的视频不再只是零散的切片，而成为一套可以被检索、被引用、被长期观看的影像档案。</p>
+        <p>品牌定位的第二个层面是情绪。雷电将军的关键词天然带着强烈的张力——雷是爆发，将军是克制，二者叠加形成一种「压抑之后的释放」。平台把这种情绪翻译成影像语言：雨夜、灯笼、侧脸、翻飞的衣袖、忍住又落下的眼泪。这些具体的视觉元素被反复验证，成为社区公认的美学标识。当我们说某个作品「很有雷电将军的感觉」，其实指向的正是这套被长期打磨的视觉语法。</p>
+
+        <h3>二、内容生态：原创者、观众与企业三方的长期协作</h3>
+        <p>一个视频品牌能否持续运营，取决于它是否建立了让创作者愿意留下的机制。雷电将军官方网站以三条线并行：第一条是官方发布线，负责年度企划、品牌形象片与技术档案，提供品质基准；第二条是创作者社区线，通过联合创作、主题挑战与投稿通道，让普通爱好者也能获得曝光；第三条是观众反馈线，评论区、评分与口碑榜不是装饰，而是真正影响首页推荐权重的数据来源。三方协作的结果是内容生态形成了自我修正能力——粗糙的模仿会自然沉底，有创意的表达会快速上升。</p>
+        <p>在具体运营上，平台每季度会公布一次内容方向清单，把「日常记录、创作幕后、人物访谈、教程干货、情感故事」等题材做成可报名的话题池。创作者提交脚本梗概即可参与初筛，入选后获得官方流量扶持与制作建议。2026 年第三季度的联合创作计划中，共有 47 位创作者参与，产出 62 条原创短片，其中 11 条进入平台年度精选。这不是靠一次营销活动完成的，而是靠稳定、可预期的机制慢慢积累起来的信任。</p>
+
+        <h3>三、社区与口碑：让「值得信赖」成为可感知的体验</h3>
+        <p>口碑不是一句文案，而是一连串具体体验的叠加。用户点开雷电将军官方网站，看到的第一屏是清晰的主视觉与明确的入口；搜索关键词，得到的反馈是即时的分类提示；点进任意一条视频，简介、标签、作者、数据与操作按钮一应俱全；遇到问题，FAQ 里能找到写得足够诚实的回答。这些细节单独看都不起眼，但它们共同决定了一个用户是否愿意第二次回来。平台把这条路径称作「用户至上」，虽然听起来像口号，落地时就是一条条可以被检查的清单。</p>
+        <p>社区氛围的维护同样需要设计。评论区的展示逻辑优先呈现有信息量的长评与具体的技术讨论，而不是单纯的情绪化短句；对争议内容，平台会选择公开说明处理依据，而不是默默下架。这种相对透明的做法让社区逐渐形成一种自我约束：讨论可以激烈，但要基于作品本身。正因如此，雷电将军相关内容的评论区常年保持着较高的信息密度，也吸引了不少影视从业者前来交流，形成了一种跨越圈层的对话空间。</p>
+
+        <h3>四、未来方向：从单一题材走向多元影像表达</h3>
+        <p>任何垂直领域都会面临题材天花板的追问。平台的回答是把「雷电将军」当作起点而非终点：以它为圆心，向外扩展出灯光技术、表演方法、叙事结构、声音设计等可迁移的知识体系，再通过创作者的个人风格把知识重新打散成具体的作品。这样一来，内容生态就不依赖单一情绪母题的反复消耗，而是持续产出新的表达方式。2026 年下半年，平台计划开放「雷光实验室」公开课，邀请摄影师、剪辑师与声音设计师分享实操经验，把行业领先的制作方法以更低的门槛传递出去。</p>
+        <p>与此同时，企业也在承担相应的社会责任：所有公开课资料永久免费、投稿通道长期开放、对青少年创作者提供内容安全指引。这些举措不会立刻带来数据增长，但它们共同塑造了一个值得信赖的品牌形象。对于雷电将军这个关键词而言，真正的稀缺资源从来不是流量，而是能让人放心停留、反复回看的高品质内容。这也是我们作为官方网站愿意长期投入的方向。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S5 创作者矩阵 ===== -->
+  <section class="rdn-section rdn-alt" id="authors" aria-labelledby="rdnAuthorTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Creators / 创作者</span>
+        <h2 id="rdnAuthorTitle">雷电将军<em>创作者矩阵</em>：六位长期共建者</h2>
+        <p class="rdn-sec-desc">他们是雷电将军内容生态的中坚力量，风格各异，共同维持着社区的真实与多元。点击可查看创作者档案。</p>
+      </div>
+
+      <div class="rdn-author-grid">
+        <article class="rdn-author">
+          <div class="rdn-author-top">
+            <span class="rdn-avatar" style="background:linear-gradient(140deg,#e6c66b,#c9a94c)">雨</span>
+            <div class="rdn-author-name"><strong>雨夜巡雷</strong><span>擅长：创作幕后 · 情绪纪实</span></div>
+          </div>
+          <p>擅长在雨夜场景中捕捉人物最细微的情绪变化，作品节奏偏慢，重视声音环境与呼吸感。三年来坚持用同一台机器拍摄，认为器材限制反而促成了风格的形成。</p>
+          <div class="rdn-author-nums"><span>作品 <b>128</b></span><span>粉丝 <b>24.6 万</b></span></div>
+          <button class="rdn-author-more" type="button" data-rdn-open="author" data-rdn-author="雨夜巡雷">查看档案</button>
+        </article>
+
+        <article class="rdn-author">
+          <div class="rdn-author-top">
+            <span class="rdn-avatar" style="background:linear-gradient(140deg,#9a7bff,#6b52b8)">镜</span>
+            <div class="rdn-author-name"><strong>镜前幕后社</strong><span>擅长：人物访谈 · 深度对话</span></div>
+          </div>
+          <p>一支专注影视访谈的小团队，问题准备极其认真，常能问出演员自己都没整理过的想法。访谈风格克制，几乎不打断，被观众称为「最会倾听的创作者」。</p>
+          <div class="rdn-author-nums"><span>作品 <b>76</b></span><span>粉丝 <b>18.2 万</b></span></div>
+          <button class="rdn-author-more" type="button" data-rdn-open="author" data-rdn-author="镜前幕后社">查看档案</button>
+        </article>
+
+        <article class="rdn-author">
+          <div class="rdn-author-top">
+            <span class="rdn-avatar" style="background:linear-gradient(140deg,#6fd6e0,#3a8fa0)">光</span>
+            <div class="rdn-author-name"><strong>光与雷实验室</strong><span>擅长：教程干货 · 灯光技术</span></div>
+          </div>
+          <p>由两位摄影指导组成的技术流创作者，擅长把复杂布光拆成可执行的步骤。每条教程都会附上参数表与失败案例，强调「能复现才算讲清楚」。</p>
+          <div class="rdn-author-nums"><span>作品 <b>94</b></span><span>粉丝 <b>31.4 万</b></span></div>
+          <button class="rdn-author-more" type="button" data-rdn-open="author" data-rdn-author="光与雷实验室">查看档案</button>
+        </article>
+
+        <article class="rdn-author">
+          <div class="rdn-author-top">
+            <span class="rdn-avatar" style="background:linear-gradient(140deg,#c9a0e8,#7b62c9)">灯</span>
+            <div class="rdn-author-name"><strong>长安纸灯</strong><span>擅长：情感故事 · 治愈影像</span></div>
+          </div>
+          <p>个人创作型创作者，偏好无台词的叙事与自然光。作品常以一位普通人的独处夜晚为主角，平静中带着力量，被许多观众当作睡前必看。</p>
+          <div class="rdn-author-nums"><span>作品 <b>58</b></span><span>粉丝 <b>12.9 万</b></span></div>
+          <button class="rdn-author-more" type="button" data-rdn-open="author" data-rdn-author="长安纸灯">查看档案</button>
+        </article>
+
+        <article class="rdn-author">
+          <div class="rdn-author-top">
+            <span class="rdn-avatar" style="background:linear-gradient(140deg,#7ec9a0,#3f8f6a)">生</span>
+            <div class="rdn-author-name"><strong>内容生态研究所</strong><span>擅长：行业观察 · 数据解读</span></div>
+          </div>
+          <p>以数据与长期观察见长的分析型账号，定期发布雷电将军内容生态报告。结论常与直觉相反，但都能拿出统计口径与样本说明，是平台口碑良好的信源。</p>
+          <div class="rdn-author-nums"><span>作品 <b>63</b></span><span>粉丝 <b>21.7 万</b></span></div>
+          <button class="rdn-author-more" type="button" data-rdn-open="author" data-rdn-author="内容生态研究所">查看档案</button>
+        </article>
+
+        <article class="rdn-author">
+          <div class="rdn-author-top">
+            <span class="rdn-avatar" style="background:linear-gradient(140deg,#e8a07b,#c96a4c)">拾</span>
+            <div class="rdn-author-name"><strong>拾光制片组</strong><span>擅长：团队协作 · 项目纪实</span></div>
+          </div>
+          <p>六人小型制片团队，习惯把全流程公开，包括失败的方案。他们的项目日志被不少新人当作入门教材，团队也常年参与平台的联合创作计划。</p>
+          <div class="rdn-author-nums"><span>作品 <b>41</b></span><span>粉丝 <b>9.8 万</b></span></div>
+          <button class="rdn-author-more" type="button" data-rdn-open="author" data-rdn-author="拾光制片组">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S6 数据榜单 + 用户评价 ===== -->
+  <section class="rdn-section" id="comments" aria-labelledby="rdnRankTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Ranking & Reviews / 榜单与口碑</span>
+        <h2 id="rdnRankTitle">雷电将军<em>热度榜与用户口碑</em></h2>
+        <p class="rdn-sec-desc">榜单数据按近 7 日综合播放、完播与互动加权计算；口碑内容来自真实用户提交，未经修饰。</p>
+      </div>
+
+      <div class="rdn-rank" style="margin-bottom:34px;">
+        <div class="rdn-rank-col">
+          <h3>热度榜 · 近 7 日</h3>
+          <ol>
+            <li><span>《雷光之下》第 6 集：眼泪与翻白眼的同一夜</span></li>
+            <li><span>雷光夜景布光三步法：冷光氛围的低成本方案</span></li>
+            <li><span>演员谈「翻白眼」：一次意外如何成为记忆点</span></li>
+            <li><span>雨夜灯笼下的三分钟：情绪戏拍摄全记录</span></li>
+            <li><span>2026 雷电将军内容生态观察：品质如何被重新定义</span></li>
+          </ol>
+        </div>
+        <div class="rdn-rank-col">
+          <h3>新人榜 · 本月成长</h3>
+          <ol>
+            <li><span>夜行灯影 · 首作《门缝里的雷》 播放 3.1 万</span></li>
+            <li><span>南方构图 · 第二支短片进入完播榜前十</span></li>
+            <li><span>一页分镜 · 以手绘分镜稿获得关注</span></li>
+            <li><span>收音小屋 · 环境声采集系列稳步起量</span></li>
+            <li><span>纸灯夜读 · 治愈向叙事首月涨粉 1.2 万</span></li>
+          </ol>
+        </div>
+        <div class="rdn-rank-col">
+          <h3>口碑榜 · 内容好评率</h3>
+          <ol>
+            <li><span>《眼泪流不停的那一夜》 好评率 99.1%</span></li>
+            <li><span>《雷光之下》系列专题 好评率 98.7%</span></li>
+            <li><span>灯光技术档案 好评率 98.4%</span></li>
+            <li><span>表演访谈合辑 好评率 97.9%</span></li>
+            <li><span>新人联合创作集 好评率 97.2%</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="rdn-comment-grid">
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#e6c66b,#c9a94c)">阿</span>
+            <div>
+              <div class="rdn-comment-name">阿澈</div>
+              <div class="rdn-comment-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>作为跟拍戏的人，第一次看到有人把布光的失败版本也放出来，非常难得。教程部分我照着做了一遍，色温确实差一点就全毁了，很实用。</p>
+          <div class="rdn-comment-meta">7 天前 · 来自教程干货</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#9a7bff,#6b52b8)">莫</span>
+            <div>
+              <div class="rdn-comment-name">莫小北</div>
+              <div class="rdn-comment-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>《眼泪流不停的那一夜》我看了三遍。没有一句台词，但最后那个镜头真的会让人安静下来。雷电将军这个题材能拍成这样，是很高的水准。</p>
+          <div class="rdn-comment-meta">5 天前 · 来自情感故事</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#6fd6e0,#3a8fa0)">林</span>
+            <div>
+              <div class="rdn-comment-name">林间有风</div>
+              <div class="rdn-comment-stars">★★★★☆</div>
+            </div>
+          </div>
+          <p>整体观感很好，正版高清片源画质稳定。唯一想提的是搜索有时候找不到很早以前的作品，希望索引再全一点，老作品也值得被翻出来。</p>
+          <div class="rdn-comment-meta">4 天前 · 来自产品体验</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#c9a0e8,#7b62c9)">苏</span>
+            <div>
+              <div class="rdn-comment-name">苏杳杳</div>
+              <div class="rdn-comment-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>翻白眼那一段我笑出声又突然有点感动，因为它太真实了。收工前的疲惫和突然来的即兴，这种东西是演不出来的，保留它是对的。</p>
+          <div class="rdn-comment-meta">6 天前 · 来自人物访谈</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#7ec9a0,#3f8f6a)">周</span>
+            <div>
+              <div class="rdn-comment-name">周野</div>
+              <div class="rdn-comment-stars">★★★★☆</div>
+            </div>
+          </div>
+          <p>行业观察那期数据口径写得比较清楚，至少说明样本怎么来的。这种内容在社区里不多见，希望每季度都出一期，方便我们判断方向。</p>
+          <div class="rdn-comment-meta">3 天前 · 来自行业观察</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#e8a07b,#c96a4c)">小</span>
+            <div>
+              <div class="rdn-comment-name">小满不是满</div>
+              <div class="rdn-comment-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>第一次投稿就被选进联合创作计划，反馈邮件里写了两页修改建议，比我上过的课都具体。这种认真对待新人的地方，我愿意一直留下来。</p>
+          <div class="rdn-comment-meta">2 天前 · 来自投稿体验</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#b8a6e8,#8c74d6)">陈</span>
+            <div>
+              <div class="rdn-comment-name">陈以默</div>
+              <div class="rdn-comment-stars">★★★★☆</div>
+            </div>
+          </div>
+          <p>片单整理得很用心，适合按专题一口气看下去。唯一小意见是希望专题页能加一个「只看已完结」的筛选，追更的时候会方便很多。</p>
+          <div class="rdn-comment-meta">8 天前 · 来自专题企划</div>
+        </article>
+
+        <article class="rdn-comment">
+          <div class="rdn-comment-top">
+            <span class="rdn-comment-dot" style="background:linear-gradient(140deg,#f2e3b0,#d9c07a)">顾</span>
+            <div>
+              <div class="rdn-comment-name">顾长风</div>
+              <div class="rdn-comment-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>关注这个雷电将军官方网站快两年了，最大的感受是内容没有变味。热度没有把人推着走，慢的东西也留得住，这在现在的社区里挺难得。</p>
+          <div class="rdn-comment-meta">1 天前 · 来自长期订阅</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S7 辅助区：企业动态 + 合作品牌 ===== -->
+  <section class="rdn-section rdn-alt" id="news" aria-labelledby="rdnNewsTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">Brand News / 企业动态</span>
+        <h2 id="rdnNewsTitle">雷电将军<em>企业动态</em>与合作伙伴</h2>
+        <p class="rdn-sec-desc">官方发布、内容更新与生态合作的最新进展，第一时间同步给社区。</p>
+      </div>
+
+      <div class="rdn-two-col">
+        <div>
+          <h3 style="font-size:16px;color:var(--rdn-gold);margin-bottom:18px;">近期动态</h3>
+          <div class="rdn-news">
+            <article class="rdn-news-item">
+              <time datetime="2026-11-22">2026-11-22</time>
+              <h4>《雷光之下》第 6 集官方上线</h4>
+              <p>年度重点企划更新，同步开启 12 位创作者联合投稿通道，投稿截止至 12 月 8 日。</p>
+            </article>
+            <article class="rdn-news-item">
+              <time datetime="2026-11-15">2026-11-15</time>
+              <h4>「雷光实验室」公开课首期开放报名</h4>
+              <p>面向全体创作者免费开放，涵盖灯光、调色与声音三门课程，名额有限，报名从速。</p>
+            </article>
+            <article class="rdn-news-item">
+              <time datetime="2026-11-06">2026-11-06</time>
+              <h4>片源质量抽检结果公示</h4>
+              <p>本期抽检 320 条内容，合格率 99.4%，对 2 条画质不达标作品执行下架重修处理。</p>
+            </article>
+            <article class="rdn-news-item">
+              <time datetime="2026-10-28">2026-10-28</time>
+              <h4>雷电将军专题《雷与泪的叙事》第三期更新</h4>
+              <p>新增表演节奏与情绪时机两个章节，配套示范短片同步上架高清版本。</p>
+            </article>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size:16px;color:var(--rdn-gold);margin-bottom:18px;">生态合作伙伴</h3>
+          <div class="rdn-partner-grid">
+            <div class="rdn-partner">光影器材社</div>
+            <div class="rdn-partner">城南放映室</div>
+            <div class="rdn-partner">声音采集局</div>
+            <div class="rdn-partner">分镜手记</div>
+            <div class="rdn-partner">夜间摄影联盟</div>
+            <div class="rdn-partner">青年影像计划</div>
+          </div>
+          <p style="font-size:12.8px;color:var(--rdn-dim);margin-top:18px;line-height:1.9;">平台与合作伙伴共同推进器材共享、线下放映与青年创作者扶持计划，所有合作均以内容品质与社区氛围为优先考量，不引入影响观看体验的干扰性内容。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="rdn-section" id="faq" aria-labelledby="rdnFaqTitle">
+    <div class="rdn-wrap">
+      <div class="rdn-sec-head">
+        <span class="rdn-sec-tag">FAQ / 常见问题</span>
+        <h2 id="rdnFaqTitle">关于雷电将军<em>官方网站</em>的常见问题</h2>
+        <p class="rdn-sec-desc">投稿、版权、观看与社区规则相关的问题，都可以在这里找到答案。</p>
+      </div>
+
+      <div class="rdn-faq">
+        <details open>
+          <summary>如何向雷电将军官方网站投稿？</summary>
+          <p>点击页面任意「投稿入口」按钮，填写作品标题、简介与发布情况即可提交。初审通常在 3 个工作日内完成，通过后会收到包含修改建议的反馈邮件。所有投稿须为原创，且不得含有侵犯他人权益的内容。</p>
+        </details>
+        <details>
+          <summary>平台上的视频都是正版高清吗？</summary>
+          <p>是的。平台对上架内容执行来源核验与画质检测，重点作品会由内容团队二次校对。凡标注「官方发布」或「高清修复」的条目，均可在片源列表中查看版本说明。</p>
+        </details>
+        <details>
+          <summary>联合创作计划的报名条件是什么？</summary>
+          <p>面向所有注册创作者开放，不设粉丝门槛。只需提交不低于 300 字的脚本梗概或分镜草图，主题需围绕当期企划设定。入选作品将获得官方推荐位与制作建议支持。</p>
+        </details>
+        <details>
+          <summary>为什么有些作品会被下架重修？</summary>
+          <p>常见原因包括画质不达标、音轨损坏或存在版权争议。平台会在下架前通知作者，并在修复完成后恢复上架，相关记录会同步至企业动态中的抽检公示。</p>
+        </details>
+        <details>
+          <summary>如何反馈问题或举报不当内容？</summary>
+          <p>在任意视频卡片上点击「反馈」按钮，选择问题类型并填写说明即可。平台承诺在 48 小时内给出处理结果，涉及版权争议的内容会优先处理。</p>
+        </details>
+        <details>
+          <summary>观看是否需要下载客户端？</summary>
+          <p>不需要。雷电将军官方网站支持在浏览器内直接高清播放，移动端会自动适配。收藏与历史记录保存在账号中，切换设备后可同步继续观看。</p>
+        </details>
+        <details>
+          <summary>创作者可以申请官方流量扶持吗？</summary>
+          <p>可以。平台每季度公布一次扶持方向，创作者按当期话题提交申请。扶持包括首页推荐位、专题收录与制作建议，具体额度依据作品完成度与社区反馈综合评估。</p>
+        </details>
+      </div>
+
+      <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:12px;">
+        <button class="rdn-btn rdn-btn-gold" type="button" data-rdn-open="submit">我要投稿</button>
+        <button class="rdn-btn rdn-btn-ghost" type="button" data-rdn-open="report">问题反馈</button>
+        <button class="rdn-btn rdn-btn-violet" type="button" data-rdn-copy>分享本页链接</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== S8 页脚 ===== -->
+<footer class="rdn-footer">
+  <div class="rdn-wrap">
+    <div class="rdn-foot-grid">
+      <div class="rdn-foot-brand">
+        <a class="rdn-brand" href="#top" aria-label="返回雷电将军官方网站顶部">
+          <span class="rdn-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M34 6 L17 35 h12 l-4 23 L47 25 H34 Z" fill="#e6c66b"/></svg>
+          </span>
+          <span class="rdn-brand-txt"><strong>雷电将军</strong><span>RAIDEN OFFICIAL</span></span>
+        </a>
+        <p>雷电将军官方网站，由企业团队持续运营的原创影像品牌。深耕雷元素视频内容，以正版高清片源、专业制作标准与温暖社区氛围，陪伴每一位创作者成长。</p>
+      </div>
+      <div class="rdn-foot-col">
+        <h4>内容</h4>
+        <a href="#focus">焦点内容</a>
+        <a href="#videos">视频社区</a>
+        <a href="#topics">专题企划</a>
+        <a href="#parse">品牌解析</a>
+      </div>
+      <div class="rdn-foot-col">
+        <h4>社区</h4>
+        <a href="#authors">创作者矩阵</a>
+        <a href="#comments">用户口碑</a>
+        <a href="#news">企业动态</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="rdn-foot-col">
+        <h4>联系</h4>
+        <span>投稿邮箱：creator@raiden-media.example</span>
+        <span>合作咨询：partner@raiden-media.example</span>
+        <span>服务时间：周一至周五 10:00–19:00</span>
+      </div>
+    </div>
+    <div class="rdn-foot-bottom">
+      <span>© 2026 雷电将军官方网站 · 版权所有 · 持续运营中</span>
+      <span>正版高清 · 原创精品内容 · 行业领先的影像内容生态</span>
+      <span>备案号：雷ICP备20261122号-3</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="rdn-toast" id="rdnToast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：通用 -->
+<div class="rdn-modal" id="rdnSubmitModal" role="dialog" aria-modal="true" aria-labelledby="rdnSubmitTitle">
+  <div class="rdn-modal-card">
+    <h3 id="rdnSubmitTitle">创作者投稿入口</h3>
+    <p class="rdn-modal-sub">提交后 3 个工作日内收到初审反馈，请确保作品为原创。</p>
+    <label for="rdnSubName">作品标题</label>
+    <input id="rdnSubName" type="text" placeholder="例如：雨夜灯笼下的三分钟">
+    <label for="rdnSubDesc">作品简介</label>
+    <textarea id="rdnSubDesc" placeholder="简要说明创意来源、拍摄方式与发布情况"></textarea>
+    <label for="rdnSubContact">联系方式</label>
+    <input id="rdnSubContact" type="text" placeholder="邮箱或站内账号">
+    <div class="rdn-modal-actions">
+      <button class="rdn-btn rdn-btn-ghost" type="button" data-rdn-close>取消</button>
+      <button class="rdn-btn rdn-btn-gold" type="button" data-rdn-submit-send>提交作品</button>
+    </div>
+  </div>
+</div>
+
+<div class="rdn-modal" id="rdnReportModal" role="dialog" aria-modal="true" aria-labelledby="rdnReportTitle">
+  <div class="rdn-modal-card">
+    <h3 id="rdnReportTitle">问题反馈</h3>
+    <p class="rdn-modal-sub">请描述遇到的问题，我们会在 48 小时内处理。</p>
+    <label for="rdnRepType">问题类型</label>
+    <input id="rdnRepType" type="text" placeholder="例如：画质问题 / 版权争议 / 页面异常">
+    <label for="rdnRepDesc">详细说明</label>
+    <textarea id="rdnRepDesc" placeholder="请补充具体页面与情况"></textarea>
+    <div class="rdn-modal-actions">
+      <button class="rdn-btn rdn-btn-ghost" type="button" data-rdn-close>取消</button>
+      <button class="rdn-btn rdn-btn-violet" type="button" data-rdn-report-send>提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<div class="rdn-modal" id="rdnAuthorModal" role="dialog" aria-modal="true" aria-labelledby="rdnAuthorModalTitle">
+  <div class="rdn-modal-card">
+    <h3 id="rdnAuthorModalTitle">创作者档案</h3>
+    <p class="rdn-modal-sub" id="rdnAuthorModalSub">长期共建者</p>
+    <p id="rdnAuthorModalBody" style="font-size:13.5px;color:#c4bade;line-height:1.95;"></p>
+    <div class="rdn-modal-actions">
+      <button class="rdn-btn rdn-btn-ghost" type="button" data-rdn-close>关闭</button>
+      <button class="rdn-btn rdn-btn-gold" type="button" data-rdn-follow>关注创作者</button>
+    </div>
+  </div>
+</div>
+
+<button class="rdn-totop" id="rdnToTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById('rdnToast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('rdn-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('rdn-on'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('rdnBurger');
+  var nav = document.getElementById('rdnNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('rdn-open');
+      burger.classList.toggle('rdn-on', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('rdn-open');
+        burger.classList.remove('rdn-on');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('rdnSearchForm');
+  var searchInput = document.getElementById('rdnSearchInput');
+  var searchHint = document.getElementById('rdnSearchHint');
+  var hintTimer = null;
+  function showHint(msg){
+    if(!searchHint) return;
+    searchHint.textContent = msg;
+    searchHint.classList.add('rdn-on');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(function(){ searchHint.classList.remove('rdn-on'); }, 2600);
+  }
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = (searchInput.value || '').trim();
+      if(!q){
+        showHint('请输入关键词，例如「雷光」「访谈」「布光」');
+        return;
+      }
+      var found = false;
+      var items = document.querySelectorAll('#rdnVideoList .rdn-video-item');
+      for(var i=0;i<items.length;i++){
+        var txt = items[i].textContent || '';
+        if(txt.indexOf(q) > -1){ found = true; break; }
+      }
+      if(found){
+        showHint('已为你定位到相关视频条目：' + q);
+        document.getElementById('videos').scrollIntoView({behavior:'smooth', block:'start'});
+      } else {
+        showHint('暂未找到「' + q + '」相关条目，试试「雷光」「情绪」或「教程」');
+      }
+    });
+  }
+
+  /* 标签筛选 */
+  var tagBar = document.getElementById('rdnTagBar');
+  if(tagBar){
+    tagBar.addEventListener('click', function(e){
+      var btn = e.target.closest('[data-rdn-filter]');
+      if(!btn) return;
+      var key = btn.getAttribute('data-rdn-filter');
+      var tags = tagBar.querySelectorAll('.rdn-tag');
+      for(var i=0;i<tags.length;i++) tags[i].classList.remove('rdn-active');
+      btn.classList.add('rdn-active');
+      var items = document.querySelectorAll('#rdnVideoList .rdn-video-item');
+      var shown = 0;
+      for(var j=0;j<items.length;j++){
+        var cat = items[j].getAttribute('data-rdn-cat') || '';
+        var ok = (key === 'all') || (cat === key);
+        items[j].style.display = ok ? '' : 'none';
+        if(ok) shown++;
+      }
+      if(key === 'all'){ toast('已显示全部 ' + shown + ' 条雷电将军视频'); }
+      else { toast('已筛选「' + key + '」内容，共 ' + shown + ' 条'); }
+    });
+  }
+
+  /* 点赞 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-rdn-like]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('[data-rdn-like-num]');
+      var icon = likeBtn.querySelector('span[aria-hidden]');
+      var base = parseInt(likeBtn.getAttribute('data-rdn-base') || (numEl ? numEl.textContent : '0'), 10) || 0;
+      if(!likeBtn.getAttribute('data-rdn-base')){
+        likeBtn.setAttribute('data-rdn-base', String(base));
+      }
+      var liked = likeBtn.classList.toggle('rdn-liked');
+      var val = liked ? base + 1 : base;
+      if(numEl) numEl.textContent = val;
+      if(icon) icon.textContent = liked ? '♥' : '♡';
+      toast(liked ? '已点赞，感谢支持原创内容' : '已取消点赞');
+      return;
+    }
+
+    /* 收藏 */
+    var favBtn = e.target.closest('[data-rdn-fav]');
+    if(favBtn){
+      var f = favBtn.classList.toggle('rdn-faved');
+      var fIcon = favBtn.querySelector('span[aria-hidden]');
+      if(fIcon) fIcon.textContent = f ? '★' : '☆';
+      toast(f ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+      return;
+    }
+
+    /* 复制链接 */
+    var copyBtn = e.target.closest('[data-rdn-copy]');
+    if(copyBtn){
+      var url = window.location.href.split('#')[0];
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          toast('链接已复制，欢迎分享雷电将军官方网站');
+        }).catch(function(){
+          toast('复制失败，请手动复制地址栏链接');
+        });
+      } else {
+        toast('当前环境不支持自动复制，请手动复制地址栏链接');
+      }
+      return;
+    }
+
+    /* 打开弹窗 */
+    var opener = e.target.closest('[data-rdn-open]');
+    if(opener){
+      var type = opener.getAttribute('data-rdn-open');
+      if(type === 'submit'){ openModal('rdnSubmitModal'); }
+      else if(type === 'report'){ openModal('rdnReportModal'); }
+      else if(type === 'author'){
+        var name = opener.getAttribute('data-rdn-author') || '创作者';
+        var card = opener.closest('.rdn-author');
+        var desc = card ? (card.querySelector('p') ? card.querySelector('p').textContent : '') : '';
+        var nums = card ? card.querySelector('.rdn-author-nums') : null;
+        var sub = document.getElementById('rdnAuthorModalSub');
+        var body = document.getElementById('rdnAuthorModalBody');
+        var title = document.getElementById('rdnAuthorModalTitle');
+        if(title) title.textContent = name;
+        if(sub) sub.textContent = nums ? nums.textContent.replace(/\s+/g,' ') : '长期共建者';
+        if(body) body.textContent = desc || '这位创作者暂无更多公开信息。';
+        openModal('rdnAuthorModal');
+      }
+      return;
+    }
+
+    /* 关注 */
+    var followBtn = e.target.closest('[data-rdn-follow]');
+    if(followBtn){
+      toast('已关注该创作者，动态将出现在你的订阅流');
+      closeAllModals();
+      return;
+    }
+
+    /* 关闭弹窗 */
+    if(e.target.closest('[data-rdn-close]')){ closeAllModals(); return; }
+    if(e.target.classList && e.target.classList.contains('rdn-modal')){ closeAllModals(); return; }
+
+    /* 提交 */
+    if(e.target.closest('[data-rdn-submit-send]')){
+      var t = document.getElementById('rdnSubName');
+      if(t && !t.value.trim()){ toast('请先填写作品标题'); return; }
+      toast('投稿已提交，初审结果将在 3 个工作日内反馈');
+      closeAllModals();
+      return;
+    }
+    if(e.target.closest('[data-rdn-report-send]')){
+      toast('反馈已提交，我们会在 48 小时内处理');
+      closeAllModals();
+      return;
+    }
+  });
+
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.add('rdn-on');
+    document.body.style.overflow = 'hidden';
+    var firstInput = m.querySelector('input, textarea, button');
+    if(firstInput) setTimeout(function(){ firstInput.focus(); }, 120);
+  }
+  function closeAllModals(){
+    var ms = document.querySelectorAll('.rdn-modal.rdn-on');
+    for(var i=0;i<ms.length;i++) ms[i].classList.remove('rdn-on');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllModals();
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('rdnToTop');
+  if(toTop){
+    window.addEventListener('scroll', function(){
+      if(window.pageYOffset > 500) toTop.classList.add('rdn-show');
+      else toTop.classList.remove('rdn-show');
+    }, {passive:true});
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 锚点偏移（吸顶高度） */
+  var sticky = document.querySelector('.rdn-sticky');
+  function offsetForAnchors(){
+    var h = sticky ? sticky.getBoundingClientRect().height : 0;
+    document.documentElement.style.scrollPaddingTop = (h + 12) + 'px';
+  }
+  offsetForAnchors();
+  window.addEventListener('resize', offsetForAnchors);
+})();
+</script>
+</body>
+  </html>
